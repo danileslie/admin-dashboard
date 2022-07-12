@@ -4,6 +4,8 @@ padding: 0;
 background: powderblue;  
 height: 100vh;
 box-sizing: border-box;
+border: 6px solid goldenrod;
+font-size: 1.5rem;
 }
 
 .container{
@@ -15,7 +17,93 @@ box-sizing: border-box;
 /* header area */
 
 .header{
+    display: grid;
+    border: 2px solid red;
     grid-area: 1 / 2 / 2 / 3;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 0.5rem 2rem 0 3rem;
+}
+
+.search-area > label > .small-icons, .large-display-icon{
+    margin-right: 20px;
+}
+
+.small-icons{
+    height: 2rem;  
+    vertical-align: middle;   
+}
+
+.large-display-icon{
+    vertical-align: middle;
+}
+ .small-display-icon, .large-display-icon{
+    background: purple;
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 5%;
+ }
+
+.small-display-icon{
+height: 3rem;
+}
+
+.large-display-icon{
+    height: 4rem;    
+}
+
+.search-area{
+display: flex;
+align-items: center;
+}
+
+input[type='search']{
+width: 85%;
+height: 2.5rem;
+border-radius: 18px;
+border: none;
+background-color: grey;
+}
+
+.top-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.top-right > p{
+    font-weight: bold;
+}
+
+.welcome{
+    display: flex; 
+    align-items: center;
+}
+.welcome > .hi-name > p{
+    margin: 0;
+}
+
+.welcome > .hi-name > :nth-child(2){
+font-size: 2rem;
+}
+
+.hi-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-buttons > button{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 38px;
+    border: none;
+    font-size: 1.3rem;
 }
 
 /* sidebar area */
