@@ -3,6 +3,7 @@ body{
     padding: 0;
     background: #6E85B7;  
     box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .container{
@@ -17,7 +18,7 @@ body{
     display: grid;
     grid-area: 1 / 2 / 2 / 3;
     grid-template-columns: 3fr 1fr;
-    padding: 0 1rem;
+    padding: 1rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     background: #C4D7E0;
 }
@@ -67,6 +68,8 @@ background-color: #6E85B7;
 
 .top-right > p{
     font-weight: bold;
+    font-size: 1.5rem;
+    color: #1A4D2E;
 }
 
 .content-buttons > button{
@@ -74,6 +77,10 @@ background-color: #6E85B7;
     width: 8rem;
     border-radius: 38px;
     border: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #F8F9D7;
+    color: #18978F;
+    font-size: 1.5rem;
 }
 
 /* sidebar area */
@@ -87,16 +94,30 @@ background-color: #6E85B7;
 
 .sidebar-options, .card-icon, .small-icons{
     height: 2rem;
+    filter: invert(37%) sepia(63%) saturate(3107%) hue-rotate(153deg) brightness(96%) contrast(81%);
+}
+
+.page-icon{
+    filter: invert(37%) sepia(63%) saturate(3107%) hue-rotate(153deg) brightness(96%) contrast(81%);
 }
 
 .logo-and-name > p, .sidebar-info > p{
     margin: 15px 0 15px 15px;  
+    color: #18978F;
 }
 
 .logo-and-name, .main-tasks, .misc-tasks{
 margin-bottom: 3rem;
 }
 
+.logo-and-name > p{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.sidebar-info > p{
+    font-size: 1.5rem;
+}
 /* main area  */
 
 .main{
@@ -110,6 +131,8 @@ margin-bottom: 3rem;
 .projects-banner, .announcements-banner, .trending-banner{
     grid-column: 1 / -1;
     margin: 0;
+    font-size: 1.5rem;
+    color: #F8F9D7;
 }
 
 .projects, .announcements, .trending{
@@ -146,6 +169,18 @@ margin-bottom: 3rem;
 .project-title-and-blurb > p, .announcement-title-and-blurb > p{
     margin: 2%;
 }
+
+.project-title-and-blurb > :nth-child(1), .announcements-titles{
+    font-size: 1.5rem;
+}
+.project-title-and-blurb > :nth-child(2), .announcements-contents, .subtitle{
+color: #336e4c;
+}
+
+.project-title-and-blurb > :nth-child(2){
+font-size: 1.2rem;
+}
+
 .announcements{
     grid-area: 1 / 2 / 2 / 3;
     grid-template-rows: min-content auto; 
@@ -186,4 +221,12 @@ hr{
 
 .user > p, .welcome > p{
     margin: 0;
+}
+
+.welcome > :nth-child(3){
+    font-size: 1.5rem;
+}
+
+p{
+    color: #1A4D2E;
 }
